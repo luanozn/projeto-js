@@ -6,8 +6,32 @@
     box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
+.header{
+    background-color: black;
+    color: white;
+    height: 100px;
+    border-bottom: 2px solid gray;
+}
+
+.menuBox{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.listItem{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+.container-body{
+    height: 89.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
