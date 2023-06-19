@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/Quiz/style/style.css">
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/R.9cfbb140a92171a4eff91a597e6a4650?rik=AeLSXlKcFWZMhA&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fdragonball%2fimages%2f1%2f14%2fGoku_ssj5-0.jpg%2frevision%2flatest%3fcb%3d20151128085616&ehk=wjEc2gDgwd50Z%2bHphVKDaADoiO7sbzkF5kg5x69KJl4%3d&risl=&pid=ImgRaw&r=0" type="image/x-icon">
+    <script src="/Quiz/script/script.js"></script>
+    <script src="jquery-3.6.4.min.js"></script>
+    <title>Quiz Genérico</title>
+  </head>
+  <body onload="loadPage()">
+    <header>Quiz sobre Linguagens e Frameworks</header>
+    <form action="nextpage.html">
+    <div id="formBox">
+      <h2 id="questionNumber">Pergunta 1:</h2>
+      <p id="question""></p>
+    <ul>
+        <li>
+            <label id="labelA">
+                <input type="radio" name="q1" value="a">
+                a) <span id="itemA"></span>
+            </label>
+        </li>
+        <li>
+            <label id="labelB">
+                <input type="radio" name="q1" value="b">
+                b) <span id="itemB"></span>
+            </label>
+        </li>
+      
+        <li>
+            <label id="labelC">
+                  <input type="radio" name="q1" value="c">
+                  c) <span id="itemC"></span>
+            </label>
+        </li>
+    </ul>
+    </div>
+    </form>
+    <div class="buttonBox">
+        <button value="Enviar respostas" id="submitButton" class="submitButton" onclick="onSubmitButtonClick()">Enviar Respostas</button>
+      </div>
+    <div class="buttonBox">
+        <button id='nextQuestion' onclick="onClick()" class="submitButton">Próxima Questão</button>
+    </div>
+    
+  </body>
+</html>

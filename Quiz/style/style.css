@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    border: 0;
+}
+
+#formBox{
+    align-items: center;
+}
+
+span{
+    padding-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+
+body{
+    background-color:gray;
+}
+
+header{
+    text-align: center;
+    padding: 15px;
+    background-color: blue;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 3px 3px black;
+    border-bottom: 5px solid black
+}
+
+h2 {
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    font-weight: bolder;
+    text-shadow: 2px 2px black;
+}
+
+p{
+    padding:5px;
+    padding-left: 15px;
+    font-size: 20px;
+    color:darkblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+ul{
+    display: flexbox;
+    padding: 15px;
+    list-style-type: none;
+}
+
+li{
+    padding: 2px;
+}
+
+.submitButton{
+    cursor:pointer;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    border:3px solid black;
+    box-shadow: 5px 3px black;
+    margin-top: 50px;
+}
+
+.submitButton:hover {
+    background-color:darkred;
+}
+
+.submitButton:active {
+    box-shadow:none;
+    position:relative;
+    top: 3px;
+    left: 3px;
+}
+
+.buttonBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#score{
+    font-size: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#scoreBox{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider de Notícias</title>
+    <link rel="shortcut icon" href="images/news-icon.jpg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/header-script.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/other-info-style.css">
+</head>
+
+<body>
+
+    <div id="header-container"></div>
+    <div class="container-body">
+        <h3>Selecione o país que deseja ver notícias</h3>
+        <div class="country-selector">
+            <select class="dropdown-options" id="country-select">
+                <option class="dropdown-option" data-value="us">Estados Unidos</option>
+                <option class="dropdown-option" data-value="gb">Reino Unido</option>
+                <option class="dropdown-option" data-value="ca">Canadá</option>
+                <option class="dropdown-option" data-value="br">Brasil</option>
+                <option class="dropdown-option" data-value="uk">Ucrânia</option>
+                <option class="dropdown-option" data-value="ru">Rússia</option>
+            </select>
+        </div>
+
+        <div class="container">
+
+            <div class="slider">
+              <!-- Os slides serão adicionados dinamicamente aqui -->
+            </div>
+      
+            <div class="navigation">
+              <button id="prev-button" class="control-button prev-button">Anterior</button>
+              <button id="next-button" class="control-button next-button">Próximo</button>
+            </div>
+          </div>
+        </div>
+
+    <script src="script/other-info.js"></script>
+</body>
+
+</html>

@@ -61,10 +61,6 @@ search.addEventListener('click', () => {
                     image.src = '';
             }
 
-            if(temperature <= 10) {
-                
-            }
-
             temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}%`;
@@ -75,8 +71,17 @@ search.addEventListener('click', () => {
             weatherBox.classList.add('fadeIn');
             weatherDetails.classList.add('fadeIn');
             container.style.height = '590px';
+
+            if(json.main.temp <= 10.9) {
+                document.querySelector('.container-body').style.backgroundColor = '#ADD8E6'
+            } else if (json.main.temp <= 25.9) {
+                document.querySelector('.container-body').style.backgroundColor = '#FFFFE0'
+            } else {
+                document.querySelector('.container-body').style.backgroundColor = '#FFA500'
+            }
+
+            localStorage.setItem("json", JSON.stringify(json))
+
         }
     )
-
-
 })
